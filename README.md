@@ -118,6 +118,7 @@ WepApp地址：[WebApp](http://www.wangzze.com)
     请求说明：
     
         格式：form-data,
+        请求方法：POST
         请求参数：{ emial: String, password: String }
 
     返回结果：
@@ -144,6 +145,7 @@ WepApp地址：[WebApp](http://www.wangzze.com)
     请求说明：
     
         格式：form-data，
+        请求方法：POST
         请求参数：{ emial: String, password: String }
 
     返回结果：
@@ -178,7 +180,10 @@ WepApp地址：[WebApp](http://www.wangzze.com)
 
     请求说明：
     
-        格式：form-data, 需要设置http 请求头部信息 Authorization：登陆后获取的token, 请求body 参数: { image1: File, image2: File }
+        格式：form-data, 
+        请求方法：POST
+        需要设置http 请求头部信息 Authorization：登陆后获取的token, 
+        请求body 参数: { image1: File, image2: File }
 
     返回结果：
     
@@ -208,7 +213,10 @@ WepApp地址：[WebApp](http://www.wangzze.com)
 
     请求说明：
     
-        格式：form-data, 需要设置http 请求头部信息 Authorization：登陆后获取的token, 请求body 参数: { image: File }
+        格式：form-data, 
+        请求方法：POST
+        需要设置http 请求头部信息 Authorization：登陆后获取的token, 
+        请求body 参数: { image: File }
 
     返回结果：
     
@@ -239,6 +247,7 @@ WepApp地址：[WebApp](http://www.wangzze.com)
     请求说明：
         
         格式：form-data, 
+        请求方法：POST
         需要设置http 请求头部信息 Authorization：登陆后获取的token, 
         请求body 参数: { image: File }
 
@@ -271,6 +280,7 @@ WepApp地址：[WebApp](http://www.wangzze.com)
     请求说明：
     
         格式：form-data, 
+        请求方法：POST
         需要设置http 请求头部信息 Authorization：登陆后获取的token, 
         请求body 参数: { title: String, content: String, image: File }
 
@@ -312,6 +322,7 @@ WepApp地址：[WebApp](http://www.wangzze.com)
     请求说明：
     
         格式：application/json, 
+        请求方法：DELETE
         需要设置http 请求头部信息 Authorization：登陆后获取的token, 
         请求body 参数: { post_id, {user_id: String, face_token: String, imagePath: String } }
 
@@ -347,6 +358,7 @@ WepApp地址：[WebApp](http://www.wangzze.com)
     请求说明：
     
         格式：application/json, 
+        请求方法：GET
         请求body 参数: { postsPerPage: Number, currentPage: Number }
 
     返回结果：
