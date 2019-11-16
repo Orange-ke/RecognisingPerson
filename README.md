@@ -68,7 +68,29 @@
 
 ### RESTFul网络接口设计
 
-#### 用户注册和登陆
+> 用户注册和登陆
+
+1： 用户注册
+
+接口地址：http://122.51.169.168/api/user/login
+
+接口能力：注册新用户，保证注册用emial唯一性
+
+请求说明：格式：form-data 请求参数：{ emial: String, password: String }
+
+返回结果：成功status(201)：{ message: "用户已创建" }, 失败status(500)：{ message: error.message }
+
+> 人脸识别接口
+
+> 人脸对比接口
+
+接口地址：http://122.51.169.168/api/posts/compare
+
+接口能力: 对接baidu人脸对比接口，将用户上传的两张人脸file类型文件转换为base64格式并添加必要的参数，访问百度对比接口，返回人脸对比结果，删选必要信息
+
+请求说明：需要设置http 请求头部信息 Authorization：登陆后获取的token, 请求body 参数: { image1: File, image2: File }
+
+返回结果：{ message: "对比成功", result:{ score: 78.42330933} }
 
 
 
