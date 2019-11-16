@@ -50,14 +50,22 @@
 
 2：人脸信息存储
 
-        const faceSchema = mongoose.Schema({
-          user_id: {type: String, require: true},
-          face_token: {type: String, require: true},
-          title: { type: String, require: true },
-          content: { type: String, require: true },
-          imagePath: { type: String, require: true },
-          creator: { type: mongoose.Schema.Types.ObjectId, ref: 'User', require: true }
-        })
+    const faceSchema = mongoose.Schema({
+
+      user_id: {type: String, require: true},
+
+      face_token: {type: String, require: true},
+
+      title: { type: String, require: true },
+
+      content: { type: String, require: true },
+
+      imagePath: { type: String, require: true },
+
+      creator: { type: mongoose.Schema.Types.ObjectId, ref: 'User', require: true }
+
+    })
+
 
 
 ### RESTFul网络接口设计
