@@ -111,9 +111,13 @@
     返回结果：
     
         成功status(201)：
-            { message: "用户已创建" }, 
+            { 
+                message: "用户已创建" 
+            }, 
         失败status(500)：
-            { message: error.message }
+            {
+                message: error.message 
+            }
 
 2: 用户登陆
 
@@ -238,8 +242,8 @@
                 message： "无权限" 
             }, 
         status(500)：
-            { message: 
-                error.message 
+            {
+                message: error.message 
             }
 
 4：人脸上传接口
@@ -310,13 +314,13 @@
                 message： "无权限" 
             }, 
         失败status(400)：
-            { message：
-                "face_token无效" 
+            { 
+                message："face_token无效" 
             }, 
         失败status(500)：
-        { 
-            message: error.message
-        }
+            { 
+                message: error.message
+            }
     
 5：获取人脸数据接口
 
