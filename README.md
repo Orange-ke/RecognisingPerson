@@ -11,8 +11,6 @@
 
 > ExampleUnitTest 
 
-相见
-
 ### 本地接口设计
 
 安卓通过类`AccessBaiduManager`类里的静态函数与百度进行交互发送请求和处理返回结果
