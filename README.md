@@ -25,7 +25,7 @@
     
     7：实现了混合式App开发<HybirdApp>
     
-    8: 使用云服务器管理后台应用和web App， 地址：www.wangzze.com
+    8: 使用云服务器管理后台应用和web App， 地址：[WebApp](http://www.wangzze.com)
 
 ## 第一部分 Native AndroidApp
 ### 类设计
