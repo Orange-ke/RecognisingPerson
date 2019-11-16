@@ -22,7 +22,7 @@
 
     6：实现了web端单页应用，在原生app功能的基础上扩展了 找出颜值最高人脸功能 和 用户注册登陆功能，实现了图片管理与用户信息结合
     
-    7：实现了混合式App开发， 利用Android webview 嵌入web App地址
+    7：实现了混合式App开发<HybirdApp>
 
 ## 第一部分 Native AndroidApp
 ### 类设计
