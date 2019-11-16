@@ -111,7 +111,8 @@
 
     请求说明：
     
-        格式：form-data 请求参数：{ emial: String, password: String }
+        格式：form-data,
+        请求参数：{ emial: String, password: String }
 
     返回结果：
     
