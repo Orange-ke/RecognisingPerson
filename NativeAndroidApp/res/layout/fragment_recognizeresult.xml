@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wangze.chouxiang.sjx.RecognizeImageView
+        android:layout_marginTop="20sp"
+        android:id="@+id/rrf_showFaceIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+    </com.wangze.chouxiang.sjx.RecognizeImageView>
+
+    <ListView
+        android:id="@+id/rrf_personLv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

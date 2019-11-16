@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="300dp"
+    android:minWidth="300dp"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/upload_dialog_title"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:text="@string/upload_dialog_upload"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/upload_dialog_msg"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:id="@+id/upload_dialog_image"
+        android:src="@mipmap/df"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/upload_dialog_btn_neg"
+            android:layout_width="0dp"
+            android:text="@string/upload_dialog_btn_neg_text"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/column_line"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <Button
+            android:id="@+id/upload_dialog_btn_pos"
+            android:text="@string/upload_dialog_btn_pos_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@null"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#38ADFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

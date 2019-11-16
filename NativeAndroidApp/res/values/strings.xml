@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ChouXiang</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">主页</string>
+    <string name="menu_gallery">识别</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">上传</string>
+
+    <string name="menu_upload">上传信息</string>
+
+    <string name="upload_take_picture">拍照</string>
+    <string name="upload_open_album">相册</string>
+    <string name="upload_form_name">姓名</string>
+    <string name="upload_form_email">信息</string>
+    <string name="upload_form_age">年龄</string>
+    <string name="upload_btn_confirm">确定</string>
+    <string name="upload_btn_retry">清空</string>
+
+    <string name="person_btn_unknown">添加信息</string>
+    <string name="person_btn_know">更多信息</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="detail_age">年龄</string>
+    <string name="detail_beauty">颜值</string>
+    <string name="detail_emotion">表情</string>
+    <string name="detail_username">表情</string>
+
+    <string name="upload_dialog_upload">上传</string>
+    <string name="upload_dialog_btn_neg_text">取消</string>
+    <string name="upload_dialog_btn_pos_text">上传</string>
+</resources>
