@@ -41,9 +41,9 @@
 
     const userSchema = mongoose.Schema({
 
-      email: { type: String, require: true, unique: true },
+      email: { type: String, require: true, unique: true }, // 用户注册用邮箱
 
-      password: { type: String, require: true }
+      password: { type: String, require: true }  // 用户账户密码
 
     })
 
@@ -52,17 +52,15 @@
 
     const faceSchema = mongoose.Schema({
 
-      user_id: {type: String, require: true},
+      face_token: {type: String, require: true},  // 上传人脸后从百度获取的face_token 用于删除人脸时使用
 
-      face_token: {type: String, require: true},
+      title: { type: String, require: true },  // 人脸姓名信息
 
-      title: { type: String, require: true },
+      content: { type: String, require: true }, // 人脸身份信息
 
-      content: { type: String, require: true },
+      imagePath: { type: String, require: true }, // 人脸照片存入服务器路径信息（由于百度接口不返回照片路径）
 
-      imagePath: { type: String, require: true },
-
-      creator: { type: mongoose.Schema.Types.ObjectId, ref: 'User', require: true }
+      creator: { type: mongoose.Schema.Types.ObjectId, ref: 'User', require: true } // 用于照片与上传者一一对应
 
     })
 
