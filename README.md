@@ -39,10 +39,14 @@
 
 1：用户信息
 
-const userSchema = mongoose.Schema({
-  email: { type: String, require: true, unique: true },
-  password: { type: String, require: true }
-})
+    const userSchema = mongoose.Schema({
+
+      email: { type: String, require: true, unique: true },
+
+      password: { type: String, require: true }
+
+    })
+
 
 2：人脸信息存储
 
