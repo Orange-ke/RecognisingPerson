@@ -27,7 +27,9 @@
     
     8: 使用云服务器管理后台应用和web App
     
-地址：[WebApp](http://www.wangzze.com)
+    9: 使用Spring boot 实现批量上传功能
+    
+网页地址：[WebApp](http://www.wangzze.com)
 
 ## 第一部分 Native AndroidApp
 ### 类设计
