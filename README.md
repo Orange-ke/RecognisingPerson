@@ -31,9 +31,9 @@
     
 原生安卓应用使用截屏视频请查看文件 NativeAndroidApp.mp4
 
-混合式开发App使用截屏视频请查看 HybirdApp.mp4
+混合式开发App使用截屏视频请查看文件 HybirdApp.mp4
     
-网页地址：[WebApp](http://www.wangzze.com)
+WepApp地址：[WebApp](http://www.wangzze.com)
 
 ## 第一部分 Native AndroidApp
 ### 类设计
