@@ -1,7 +1,7 @@
 # RecognisingPerson
 ## 类设计
 
-![https://github.com/Orange-ke/RecognisingPerson/blob/master/class.jpg]()
+![https://orange-ke.github.io/RecognisingPerson/class.jpg]()
 
 ## 本地接口设计
 
