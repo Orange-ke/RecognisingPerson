@@ -31,4 +31,11 @@
 
 详细内容，见 [详细技术文档](https://orange-ke.github.io/RecognisingPerson/doc/index.html)
 
+## 第二部分 NodeJS 后台
+
+## 综述 使用MEAN(MongoDB, Express, Angular, NodeJS)全栈技术搭建后台RESTFul接口和相应的Web SPA。
+
+### RESTFul网络接口设计REST
+
+
 
