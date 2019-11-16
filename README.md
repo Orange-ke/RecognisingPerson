@@ -35,7 +35,32 @@
 
 ## 综述 使用MEAN(MongoDB, Express, Angular, NodeJS)全栈技术搭建后台RESTFul接口和相应的Web SPA。
 
-### RESTFul网络接口设计REST
+### 数据库设计 （使用Mongoose 设计存储模式）
+
+1：用户信息
+
+const userSchema = mongoose.Schema({
+  email: { type: String, require: true, unique: true },
+  password: { type: String, require: true }
+})
+
+2：人脸信息存储
+
+const faceSchema = mongoose.Schema({
+  user_id: {type: String, require: true},
+  face_token: {type: String, require: true},
+  title: { type: String, require: true },
+  content: { type: String, require: true },
+  imagePath: { type: String, require: true },
+  creator: { type: mongoose.Schema.Types.ObjectId, ref: 'User', require: true }
+})
+
+
+### RESTFul网络接口设计
+
+#### 用户注册和登陆
+
+
 
 
 
