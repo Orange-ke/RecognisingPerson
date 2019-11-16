@@ -1,5 +1,9 @@
 # RecognisingPerson
 
+## 组员名单
+
+> 王泽 柯阳 邵佳鑫 段乘风 娄斌.
+
 ## 项目亮点
 ### 原生Android
 1：实现了建库/查询/对比等基础功能
@@ -106,13 +110,36 @@
 
 2: 用户登陆
 
-    接口地址：http://122.51.169.168/api/user/login
+    接口地址：
+    
+        http://122.51.169.168/api/user/login
 
-    接口能力：已注册用户登陆，使用Web JWT生成token，并设置过期时间
+    接口能力：
+    
+        已注册用户登陆，使用Web JWT生成token，并设置过期时间
 
-    请求说明：格式：form-data 请求参数：{ emial: String, password: String }
+    请求说明：
+    
+        格式：form-data，
+        请求参数：{ emial: String, password: String }
 
-    返回结果：成功status(200)：{ message: "登陆成功"，result: { token：token, userId: userId, expiresIn: 3600 } }, 失败status(401)：{ message: "账户不存在" } / { message: "密码错误" }， 失败status(500): { message: error.message }
+    返回结果：
+    
+        成功status(200)：
+            { 
+                message: "登陆成功"，
+                result: { token：token, userId: userId, expiresIn: 3600 } 
+            }, 
+        失败status(401)：
+            { 
+                message: "账户不存在" 
+            } || { 
+            message: "密码错误" 
+            }， 
+            失败status(500): 
+            { 
+                message: error.message 
+            }
 
 > 人脸识别接口
 
@@ -188,7 +215,9 @@
 
     请求说明：
         
-        格式：form-data, 需要设置http 请求头部信息 Authorization：登陆后获取的token, 请求body 参数: { image: File }
+        格式：form-data, 
+        需要设置http 请求头部信息 Authorization：登陆后获取的token, 
+        请求body 参数: { image: File }
 
     返回结果：
         
@@ -209,19 +238,43 @@
 4：人脸上传接口
 
     接口地址：
+    
         http://122.51.169.168/api/posts
 
     接口能力: 
+    
         对接baidu人脸添加接口，将用户上传图片从file类型文件转换为base64格式并添加必要的参数，调用百度人脸搜索接口，返回人脸搜索结果，若人脸相似分大于80分则判定存在该人脸，将该人脸保存到同一user_id下， 若分数小于80分，则判定无该人脸则新建user_id, 调用baidu添加人脸接口，成功分会后将用户上传单张带人脸照片和信息保存到服务器中， 返回相应的结果，中间流程出错都返回错误信息。
 
-    请求说明：格式：form-data, 需要设置http 请求头部信息 Authorization：登陆后获取的token, 请求body 参数: { title: String, content: String, image: File }
+    请求说明：
+    
+        格式：form-data, 
+        需要设置http 请求头部信息 Authorization：登陆后获取的token, 
+        请求body 参数: { title: String, content: String, image: File }
 
     返回结果：
-        成功status(201): { message: "该人脸用户已存在，已将图片插入该用户列表下", result: { location, faces_info } }, 
-        成功status(201): { message: "该人脸用户不存在，已新建用户并插入图片", result: { location, faces_info } }
-        失败status(401)：{ message： "无权限" }, 
-        失败status(400)：{ message： "图片存在问题" }, 
-        失败status(500) { message: error.message }
+    
+        成功status(201): 
+            { 
+                message: "该人脸用户已存在，已将图片插入该用户列表下", 
+                result: { location, faces_info } 
+            }, 
+        成功status(201): 
+            { 
+                message: "该人脸用户不存在，已新建用户并插入图片", 
+                result: { location, faces_info } 
+            }
+        失败status(401)：
+            { 
+                message： "无权限" 
+            }, 
+        失败status(400)：
+            { 
+                message： "图片存在问题" 
+            }, 
+        失败status(500)：
+            { 
+                message: error.message 
+            }
     
 5：人脸删除接口
 
@@ -235,9 +288,12 @@
 
     请求说明：
     
-        格式：application/json, 需要设置http 请求头部信息 Authorization：登陆后获取的token, 请求body 参数: { post_id, {user_id: String, face_token: String, imagePath: String } }
+        格式：application/json, 
+        需要设置http 请求头部信息 Authorization：登陆后获取的token, 
+        请求body 参数: { post_id, {user_id: String, face_token: String, imagePath: String } }
 
     返回结果：
+    
         成功status(201): 
             { 
                 message: "人脸删除成功" 
@@ -258,15 +314,20 @@
 5：获取人脸数据接口
 
     接口地址：
+    
         http://122.51.169.168/api/posts
 
     接口能力: 
+    
         从服务器返回分页人脸数据
 
     请求说明：
-        格式：application/json, 请求body 参数: { postsPerPage: Number, currentPage: Number }
+    
+        格式：application/json, 
+        请求body 参数: { postsPerPage: Number, currentPage: Number }
 
     返回结果：
+    
         成功status(201): 
             { 
                 message: '获取人脸数据成功',
@@ -281,7 +342,7 @@
 
 ### 特别鸣谢
 
-@
+感谢@johnyu666 老师的悉心指导
 
 
 
