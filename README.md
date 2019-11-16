@@ -29,7 +29,11 @@
     
     9: 使用Spring boot 实现批量上传功能
     
-网页地址：[WebApp](http://www.wangzze.com)
+原生安卓应用使用截屏视频请查看文件 NativeAndroidApp.mp4
+
+混合式开发App使用截屏视频请查看文件 HybirdApp.mp4
+    
+WepApp地址：[WebApp](http://www.wangzze.com)
 
 ## 第一部分 Native AndroidApp
 ### 类设计
@@ -114,6 +118,7 @@
     请求说明：
     
         格式：form-data,
+        请求方法：POST
         请求参数：{ emial: String, password: String }
 
     返回结果：
@@ -140,6 +145,7 @@
     请求说明：
     
         格式：form-data，
+        请求方法：POST
         请求参数：{ emial: String, password: String }
 
     返回结果：
@@ -174,7 +180,10 @@
 
     请求说明：
     
-        格式：form-data, 需要设置http 请求头部信息 Authorization：登陆后获取的token, 请求body 参数: { image1: File, image2: File }
+        格式：form-data, 
+        请求方法：POST
+        需要设置http 请求头部信息 Authorization：登陆后获取的token, 
+        请求body 参数: { image1: File, image2: File }
 
     返回结果：
     
@@ -204,7 +213,10 @@
 
     请求说明：
     
-        格式：form-data, 需要设置http 请求头部信息 Authorization：登陆后获取的token, 请求body 参数: { image: File }
+        格式：form-data, 
+        请求方法：POST
+        需要设置http 请求头部信息 Authorization：登陆后获取的token, 
+        请求body 参数: { image: File }
 
     返回结果：
     
@@ -235,6 +247,7 @@
     请求说明：
         
         格式：form-data, 
+        请求方法：POST
         需要设置http 请求头部信息 Authorization：登陆后获取的token, 
         请求body 参数: { image: File }
 
@@ -267,6 +280,7 @@
     请求说明：
     
         格式：form-data, 
+        请求方法：POST
         需要设置http 请求头部信息 Authorization：登陆后获取的token, 
         请求body 参数: { title: String, content: String, image: File }
 
@@ -308,6 +322,7 @@
     请求说明：
     
         格式：application/json, 
+        请求方法：DELETE
         需要设置http 请求头部信息 Authorization：登陆后获取的token, 
         请求body 参数: { post_id, {user_id: String, face_token: String, imagePath: String } }
 
@@ -343,6 +358,7 @@
     请求说明：
     
         格式：application/json, 
+        请求方法：GET
         请求body 参数: { postsPerPage: Number, currentPage: Number }
 
     返回结果：
